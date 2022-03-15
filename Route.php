@@ -26,11 +26,6 @@ class Route
         return include(self::getFilePathByName($route_name));
     }
 
-    public static function sync(string $route_name)
-    {
-        return include(self::getFilePathByName($route_name));
-    }
-
     public static function getFilePathByName(string $route_name): string
     {
         return self::$root . self::Routes[$route_name];
