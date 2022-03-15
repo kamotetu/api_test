@@ -1,5 +1,7 @@
 <?php
-global $params;
+/**
+ * @var array $params リクエストのパラメータ
+ */
 $post_path = Route::createRouteUrl('/post');
 ?>
 

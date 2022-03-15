@@ -1,8 +1,7 @@
 <?php
 /**
- * 読み込み元で指定している(あまり気にしないでください。)
- * @var string $http_method
- * @var array $params
+ * @var string $http_method リクエストのメソッド
+ * @var array $params リクエストのパラメータ
  */
 // ajax通信ではなかったら404を表示して処理終了
 if (
