@@ -11,10 +11,13 @@ $post_path = Route::createRouteUrl('/post');
     <label for="text">テキスト2</label>
     <input type="text" id="text2" name="text" data-post_path="<?php echo $post_path; ?>">
 </div>
-
-<div id="timer">
-    3<!--insert_timer_js-->
+<div style="display: flex;">
+    <div>タイマー:&emsp;</div>
+    <div id="timer">
+        3<!--insert_timer_js-->
+    </div>
 </div>
+
 <ul id="insert_js">
     <!--insert_js-->
 </ul>
