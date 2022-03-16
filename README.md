@@ -2,4 +2,4 @@
 
 - ~$ make build (初回のみ)
 - ~$ make up
-- http://localhost:8080へアクセス
+- http://localhost:8080 へアクセス
