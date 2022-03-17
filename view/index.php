@@ -104,13 +104,13 @@ $post_path = Route::createRouteUrl('/post');
         }
 
         // ajax通信を時間差で実行する
-        function ajaxSetTimeoutId (url, data) {
+        function ajaxSetTimeoutId (url, data, form_type) {
             // ajax通信までの時間をカウントダウンする
             countDown();
             // setTimeoutの返り値のidをtimeout_idにセット
             timeout_id = setTimeout(function () {
                 // ajax通信を実行
-                doAjax(url, data);
+                doAjax(url, data, form_type);
             }, 3000);// 3秒後に実行
         }
 
@@ -124,8 +124,9 @@ $post_path = Route::createRouteUrl('/post');
         }
 
         // ajax通信処理
-        function doAjax (url, data) {
+        function doAjax (url, data, form_type) {
             // ajax通信中の場合ajax通信をストップする
+            console.log(form_type);
             if (jqxhr) {
                 jqxhr.abort();
             }
