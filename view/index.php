@@ -4,11 +4,11 @@ $post_path = Route::createRouteUrl('/post');
 ?>
 
 <div>
-    <label for="text">テキスト1</label>
+    <label for="text1">テキスト1</label>
     <input type="text" id="text1" name="text" data-post_path="<?php echo $post_path; ?>">
 </div>
 <div>
-    <label for="text">テキスト2</label>
+    <label for="text2">テキスト2</label>
     <input type="text" id="text2" name="text" data-post_path="<?php echo $post_path; ?>">
 </div>
 <div style="display: flex;">
