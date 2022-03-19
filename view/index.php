@@ -126,7 +126,6 @@ $post_path = Route::createRouteUrl('/post');
         // ajax通信処理
         function doAjax (url, data, form_type) {
             // ajax通信中の場合ajax通信をストップする
-            console.log(form_type);
             if (jqxhr) {
                 jqxhr.abort();
             }
